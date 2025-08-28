@@ -24,6 +24,18 @@ void test_subtract(void) {
   TEST_ASSERT_EQUAL(0, subtract(0, 0));
 }
 
+void test_multiply(void) {
+  TEST_ASSERT_EQUAL(15, multiply(5, 3)); 
+  TEST_ASSERT_EQUAL(-15, multiply(-5, 3)); 
+  TEST_ASSERT_EQUAL(0, multiply(0, 0)); 
+}
+
+void test_incorrect_sum(void) {
+  TEST_ASSERT_NOT_EQUAL(8, incorrect_sum(5, 3)); 
+  TEST_ASSERT_NOT_EQUAL(-2, incorrect_sum(-5, 3)); 
+  TEST_ASSERT_NOT_EQUAL(0, incorrect_sum(0, 0)); 
+}
+
 void test_get_greeting(void) {
   char *greeting = get_greeting("Alice");
   TEST_ASSERT_NOT_NULL(greeting);

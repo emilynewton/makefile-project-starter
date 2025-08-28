@@ -40,3 +40,16 @@ char *get_greeting(const char *restrict name)
 
   return greeting;
 }
+
+int multiply(int a, int b) {
+  return a * b; 
+}
+
+int incorrect_sum(int a, int b) {
+  int actual_sum = a + b; 
+  int incorrect_sum = rand() % 100 + 1; 
+  while (incorrect_sum == actual_sum) {
+    incorrect_sum = rand() % 100 + 1;
+  }
+  return incorrect_sum; 
+}
