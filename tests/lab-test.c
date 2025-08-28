@@ -56,5 +56,7 @@ int main(void) {
   RUN_TEST(test_get_greeting);
   RUN_TEST(test_add);
   RUN_TEST(test_subtract);
+  RUN_TEST(test_multiply); 
+  RUN_TEST(test_incorrect_sum); 
   return UNITY_END();
 }
